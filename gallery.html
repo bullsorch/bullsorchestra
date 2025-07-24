@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulls Orchestra | Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.png" alt="Bulls Orchestra Logo" class="logo" />
+      <h1>Bloomingdale Senior High School Orchestra</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
+  <main>
+    <section id="gallery">
+      <h2>Photo Gallery</h2>
+      <p>
+        Enjoy highlights from our concerts, rehearsals and events. New photos are
+        added regularly after they have been reviewed and approved.
+      </p>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Images are dynamically inserted by gallery.js -->
+      </div>
+    </section>
+    <section id="upload">
+      <h2>Share Your Photos</h2>
+      <p>
+        Have a great picture from a Bulls Orchestra event? Use the form below to
+        submit your photo for inclusion in the gallery. Submissions are
+        reviewed by our staff before being published.
+      </p>
+      <form
+        action="https://formsubmit.co/bshsorchestraboosters@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Disable CAPTCHA to simplify submissions -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New Photo Submission" />
+        <label for="photoUpload">Choose a photo to upload:</label><br />
+        <input
+          id="photoUpload"
+          type="file"
+          name="attachment"
+          accept="image/*"
+          required
+        /><br /><br />
+        <button class="button" type="submit">Submit Photo</button>
+        <p class="upload-note">
+          Note: Uploads are sent to our coordinators via email. Once approved,
+          your photo will appear in the gallery above. To ensure quality and
+          privacy, please make sure everyone pictured has given permission.
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Bloomingdale Senior High School Orchestra. All rights reserved.</p>
+  </footer>
+  <script src="gallery.js"></script>
+</body>
+</html>

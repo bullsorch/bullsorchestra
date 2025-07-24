@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulls Orchestra | Support</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.png" alt="Bulls Orchestra Logo" class="logo" />
+      <h1>Bloomingdale Senior High School Orchestra</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
+  <main>
+    <section id="donate">
+      <h2>Support the Bulls Orchestra</h2>
+      <p>
+        Every dollar you contribute directly benefits our student musicians.
+        Donations help us purchase new instruments, repair existing ones, buy
+        sheet music and cover travel expenses for competitions and
+        performances. Your generosity ensures that the orchestra program
+        continues to grow and flourish.
+      </p>
+      <!-- Givebutter Donation Button: opens the campaign page in a new tab -->
+      <button class="button" id="donate-button">Donate Now</button>
+      <p>
+        The donation button above uses Givebutter, our online fundraising
+        platform. Clicking the button will take you to our secure donation page
+        where you can choose your contribution amount and complete your
+        donation.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Bloomingdale Senior High School Orchestra. All rights reserved.</p>
+  </footer>
+  <script>
+    // Open the Givebutter campaign page in a new tab when the donate button is clicked
+    document.getElementById('donate-button').addEventListener('click', function () {
+      window.open('https://givebutter.com/bshsorchgivingtues', '_blank');
+    });
+  </script>
+</body>
+</html>
